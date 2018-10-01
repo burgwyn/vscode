@@ -35,6 +35,7 @@ export interface ISCMResourceDecorations {
 export interface ISCMResource {
 	readonly resourceGroup: ISCMResourceGroup;
 	readonly sourceUri: URI;
+	readonly label?: string;
 	readonly decorations: ISCMResourceDecorations;
 	open(): Thenable<void>;
 }
